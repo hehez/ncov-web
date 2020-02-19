@@ -1,0 +1,53 @@
+{
+  "name": "wuhan-ncov-2020-client",
+  "version": "0.0.1",
+  "author": "high5.today",
+  "license": "MIT",
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "@material-ui/core": "^4.3.2",
+    "@material-ui/icons": "^4.2.1",
+    "history": "^4.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.1.1"
+  },
+  "devDependencies": {
+    "husky": "^4.2.2",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "source-map-explorer": "^2.2.2"
+  },
+  "scripts": {
+    "prettier:all": "./node_modules/.bin/prettier --write src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
+    "precommit": "lint-staged",
+    "lint:js": "eslint . --ext .js,.jsx",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -3,8 +3,6 @@ import { Grid, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Header, Footer} from '../Layouts';
 
-import './App.css'; // here is where the magic happens
-
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',

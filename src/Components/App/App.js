@@ -1,6 +1,6 @@
-import React, { useState, useEffect, Fragment } from "react";
-import { Grid, Paper } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { useState, useEffect, Fragment } from "./node_modules/react";
+import { Grid, Paper } from './node_modules/@material-ui/core';
+import { makeStyles } from './node_modules/@material-ui/core/styles';
 import { Header, Footer} from '../Layouts';
 
 const useStyles = makeStyles(theme => ({

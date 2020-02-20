@@ -5,7 +5,7 @@ import { AppBar, Toolbar, Typography } from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
   offset: theme.mixins.toolbar,
   typography: {
-    // marginTop: theme.spacing(2),
+    marginTop: theme.spacing(2),
     display: "flex",
     flexDirection: "column",
     alignItems: "center"
@@ -19,7 +19,7 @@ const Header = props => {
     <AppBar position="static">
       <Toolbar>
         <Typography
-          paragraph="true"
+          paragraph
           variant="h3"
           className={classes.typography}
           color="textPrimary"

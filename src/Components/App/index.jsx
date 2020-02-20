@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Fragment } from "react";
+import { BrowserRouter } from "react-router-dom";
 import { Grid, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Header, Footer } from "../Layouts";
@@ -30,7 +31,7 @@ const section = {
 const App = props => {
   const classes = useStyles();
 
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
   const [articleListData, setArticleListData] = useState([]);
   const [chinaTotalData, setChinaTotalData] = useState([]);
 
@@ -49,7 +50,7 @@ const App = props => {
       <Header />
       <Grid container spacing={3}>
         {articleListData.map(item => (
-          <Grid item xs={4} spacing={3}>
+          <Grid item xs={3} spacing={3}>
             <Paper
               className={classes.paper}
               elevation={4}
